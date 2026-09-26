@@ -1,0 +1,123 @@
+/* حذف ظاهر خام پیش‌فرض Leaflet و سفارشی‌سازی کامل */
+
+.leaflet-container {
+  font-family: "Vazirmatn", sans-serif !important;
+  direction: rtl;
+  background: #F8FAFC;
+}
+
+/* پاپ‌آپ سفارشی */
+.leaflet-popup-content-wrapper {
+  border-radius: 16px !important;
+  box-shadow: 0 8px 28px -4px rgba(15, 23, 42, 0.18) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: 260px !important;
+  direction: rtl;
+}
+
+.leaflet-popup-tip {
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.1) !important;
+}
+
+.leaflet-popup-close-button {
+  color: white !important;
+  top: 8px !important;
+  left: 8px !important;
+  right: auto !important;
+  font-size: 20px !important;
+}
+
+.city-popup {
+  display: flex;
+  flex-direction: column;
+}
+
+.city-popup__image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.city-popup__body {
+  padding: 12px 14px;
+}
+
+.city-popup__title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #0F172A;
+  margin-bottom: 4px;
+}
+
+.city-popup__meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.city-popup__badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: white;
+}
+
+.city-popup__link {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563EB;
+  text-decoration: none;
+}
+
+/* مارکر سفارشی دسته‌بندی */
+.city-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  border: 2px solid white;
+}
+
+.city-marker__icon {
+  transform: rotate(-45deg);
+  color: white;
+}
+
+/* کلاستر */
+.marker-cluster-custom {
+  background: linear-gradient(135deg, #0EA5E9, #2563EB);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  border: 3px solid white;
+}
+
+/* کنترل‌های زوم و لایه */
+.leaflet-control-zoom a {
+  border-radius: 10px !important;
+  color: #0F172A !important;
+}
+
+.leaflet-control-layers {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px -4px rgba(15, 23, 42, 0.15) !important;
+  font-size: 13px;
+}

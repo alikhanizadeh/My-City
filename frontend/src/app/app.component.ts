@@ -1,0 +1,21 @@
+import { CommonModule } from "@angular/common";
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+import { NavbarComponent } from "@shared/components/navbar/navbar.component";
+import { ToastComponent } from "@shared/components/toast/toast.component";
+
+@Component({
+  selector: "app-root",
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, NavbarComponent, ToastComponent],
+  template: `
+    <div class="min-h-screen flex flex-col bg-surface-bg">
+      <app-navbar></app-navbar>
+      <main class="flex-1">
+        <router-outlet></router-outlet>
+      </main>
+      <app-toast></app-toast>
+    </div>
+  `,
+})
+export class AppComponent {}

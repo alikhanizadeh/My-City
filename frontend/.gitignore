@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.angular/
+*.log
+
+# فایل‌های IDE و سیستم‌عامل
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# لاگ‌های npm
+npm-debug.log*
+yarn-error.log*
