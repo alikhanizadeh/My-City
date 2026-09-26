@@ -342,9 +342,3 @@ Base prefix: `/api/v1/`. Full interactive docs at **`/api/docs`**.
 No license has been added to this repository yet. Add a `LICENSE` file (e.g. MIT) if you intend to open it up for public/commercial use.
 
 ---
-
-<div align="center">
-
-ساخته‌شده با ❤️ — Built with ❤️
-
-</div>
